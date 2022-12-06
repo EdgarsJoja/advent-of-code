@@ -43,10 +43,10 @@ int main() {
     string s;
     int marker_position, message_position;
 
-    while (cin >> s) {
-        marker_position = find_marker_position(s, 4);
-        message_position = find_marker_position(s, 14);
-    }
+    cin >> s;
+
+    marker_position = find_marker_position(s, 4);
+    message_position = find_marker_position(s, 14);
 
     printf("Part 1: %d\nPart 2: %d\n", marker_position, message_position);
 
